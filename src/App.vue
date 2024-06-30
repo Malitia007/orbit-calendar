@@ -3,7 +3,7 @@ import OrbitNavigation from "@/components/OrbitNavigation.vue";
 </script>
 
 <template>
-  <div id="app">
+  <div>
     <orbit-navigation
         :base-radius="245"
         :num-days-visible="10"

@@ -65,18 +65,18 @@ const isTruncated = ref(true);
               <p>{{orb?.city}}</p>
             </div>
             <div>
-              <img src="/src/assets/company-avatar.svg" alt="logo"/>
+              <img src="@/assets/company-avatar.svg" alt="logo"/>
             </div>
         </div>
           <div class="mutual">
-            <div><img src="/src/assets/avatar-group.png" alt="users group" /></div>
+            <div><img src="@/assets/avatar-group.png" alt="users group" /></div>
             <p>Jason Diamond, John Eremic, <br/> and 281 other mutual connections</p>
           </div>
         </div>
       </div>
 
       <div class="replay">
-        <a href=""><img src="../assets/Vector.svg"/>
+        <a href=""><img src="@/assets/Vector.svg"/>
           Reply from Emery Wells</a>
       </div>
 
@@ -84,7 +84,7 @@ const isTruncated = ref(true);
         <div class="msg-date">{{formatDate(new Date(orb?.created_at))}}</div>
         <p><strong>{{orb?._orbits_last_message?.message_head}}</strong></p>
         <p :class="{ 'text-truncated': isTruncated }">{{orb?._orbits_last_message?.message}}</p>
-        <button v-if="isTruncated" @click="isTruncated = !isTruncated">More <img src="../assets/chevron-down.svg" alt="chevron"/> </button>
+        <button v-if="isTruncated" @click="isTruncated = !isTruncated">More <img src="@/assets/chevron-down.svg" alt="chevron"/> </button>
       </div>
     </div>
   </div>

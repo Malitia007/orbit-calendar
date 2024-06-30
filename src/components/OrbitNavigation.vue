@@ -158,9 +158,6 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 0;
-  right: 0;
-  margin: auto;
   opacity: 1;
   transition: all 0.5s linear;
 }
